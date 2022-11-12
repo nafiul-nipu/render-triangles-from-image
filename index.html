@@ -1,73 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Assignment 0</title>
-    
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Render Triangles From Image</title>
+  </head>
+  <body>
     <div class="container">
-        <div class="left">
-            <div>
-                <p>Background Color in RGB : </p>
-                <div>
-                    <input type="range" id="rSlider" name="rSlider"
-                           min="0" max="255" value="0">
-                    <label for="rSlider"><span id="rValue">0</span> R</label>
-                  </div>
-                  <div>
-                    <input type="range" id="gSlider" name="gSlider"
-                           min="0" max="255" value="0">
-                    <label for="gSlider"><span id="gValue">0</span> G</label>
-                  </div>
-                  <div>
-                    <input type="range" id="bSlider" name="bSlider"
-                           min="0" max="255" value="0">
-                    <label for="bSlider"><span id="bValue">0</span> B</label>
-                  </div>
-
-            </div>
-
-            <div>
-                <p>Number of Triangles : </p>
-                <div>
-                    <input type="range" id="triangles" name="triangles"
-                           min="0" value="100" max="255">
-                    <label for="triangles"><span id="tri">100</span> Triangles</label>
-                  </div>
-
-            </div>
-
-            <div>
-                <label for="fileInput">Choose a json file:</label>
-
-                <input type="file"
-                    id="fileInput" name="fileInput"
-                    accept=".json">
-            </div>
-
-            <div>
-                <p>Triangle color toggle between configuration panel / json file:</p>
-
-                <input type="checkbox" id="toggleCheck" name="toggleCheck"
-                        checked>
-                <label for="toggleCheck">Json File</label>
-
-            </div>
-
+      <div class="left">
+        <div>
+          <p>Background Color in RGB :</p>
+          <div>
+            <input
+              type="range"
+              id="rSlider"
+              name="rSlider"
+              min="0"
+              max="255"
+              value="0"
+            />
+            <label for="rSlider"><span id="rValue">0</span> R</label>
+          </div>
+          <div>
+            <input
+              type="range"
+              id="gSlider"
+              name="gSlider"
+              min="0"
+              max="255"
+              value="0"
+            />
+            <label for="gSlider"><span id="gValue">0</span> G</label>
+          </div>
+          <div>
+            <input
+              type="range"
+              id="bSlider"
+              name="bSlider"
+              min="0"
+              max="255"
+              value="0"
+            />
+            <label for="bSlider"><span id="bValue">0</span> B</label>
+          </div>
         </div>
-        <div class="right">
-            <canvas id="glcanvas"></canvas>
+
+        <div>
+          <p>Number of Triangles :</p>
+          <div>
+            <input
+              type="range"
+              id="triangles"
+              name="triangles"
+              min="0"
+              value="100"
+              max="255"
+            />
+            <label for="triangles"><span id="tri">100</span> Triangles</label>
+          </div>
         </div>
+
+        <div>
+          <label for="fileInput">Choose a json file:</label>
+
+          <input type="file" id="fileInput" name="fileInput" accept=".json" />
+        </div>
+
+        <div>
+          <p>Triangle color toggle between configuration panel / json file:</p>
+
+          <input type="checkbox" id="toggleCheck" name="toggleCheck" checked />
+          <label for="toggleCheck">Json File</label>
+        </div>
+
+        <div>
+          <a
+            href="https://github.com/nafiul-nipu/render-triangles-from-image/tree/main/files"
+            target="_blank"
+            >Click to Download Files</a
+          >
+        </div>
+      </div>
+      <div class="right">
+        <canvas id="glcanvas"></canvas>
+      </div>
     </div>
 
-
     <script src="assignment0.js" type="module"></script>
-</body>
-
-
+  </body>
 </html>
