@@ -1,0 +1,15 @@
+.container{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.left{
+    width: 20%; 
+    float: left;
+}
+
+.right{
+    width: 80%;
+    margin-left: 20%;
+}
